@@ -1,0 +1,29 @@
+class main {
+
+static boolean isVowel (char c)
+ {
+ return (c == 'a' || c == 'A' || c == 'e' || c == 'E'|| c== 'i'|| c=='I' || c == 'o' || c == 'O' || c== 'u' || c=='U');
+}
+
+public static void main(String args[]) { 
+
+String str = "Education";
+
+
+int j=0; char[ ] str1 = str.toCharArray();
+
+String vowel = ""; 
+for (int i=0; i < str1.length; i++) { 
+if ( !isVowel (str1[i])) {
+j++;
+vowel += str1[i];
+}
+}
+for (int i=0; i<str1.length; i++) { if (!isVowel (str1[i])) { 
+    str1[i]= vowel.charAt(--j);
+}
+}
+
+System.out.println (String.valueOf(str1));
+}
+}
