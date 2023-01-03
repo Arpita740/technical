@@ -1,0 +1,19 @@
+import java.util.*; 
+public class Main
+
+{
+
+public static void main(String[] args) {
+
+Scanner sc= new Scanner(System.in); 
+int x=sc.nextInt(); 
+for(int i=1;i<x;i++)
+{
+String format="%"+i+"c"+"%"+(x*2-(i*2+1)+"s%c");
+
+System.out.println("".format(format,(i+64),"",(i+64)));
+}
+System.out.println("".format("%"+x+"c",(x+64)));
+}
+}
+
