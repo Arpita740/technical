@@ -1,0 +1,39 @@
+public class Sum {
+
+public static void main(String[] args) { // TODO Auto-generated method stub
+
+int num= new java.util.Scanner(System.in).nextInt();
+
+double res=1, fact=1, fact1=1;
+
+boolean isSign=true;
+
+if (num==1)
+
+System.out.print("sum="+res);
+
+else {
+
+for (int i=2;i<=num;i++) {
+
+fact=fact*i;
+
+if (isSign) {
+
+res=res-(i/fact); isSign=false;
+
+}
+
+else {
+
+res=res+(1/fact);
+
+isSign=true;
+
+}
+}
+System.out.print ("sum="+res);
+}
+
+}
+}
